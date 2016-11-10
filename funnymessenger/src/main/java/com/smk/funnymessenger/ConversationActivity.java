@@ -358,17 +358,17 @@ public class ConversationActivity extends AppCompatActivity implements EmojiconG
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.conversation_menu_items, menu);
         MenuItem item_audio = menu.findItem(R.id.action_audio);
-        item_audio.setIcon(getIconicDrawable(GoogleMaterial.Icon.gmd_phone.toString(), android.R.color.white, 20));
+        item_audio.setIcon(getIconicDrawable(GoogleMaterial.Icon.gmd_phone.toString(), R.color.fnMessengerAccentColor, 20));
         item_audio.setVisible(false);
         MenuItem item_video = menu.findItem(R.id.action_video);
-        item_video.setIcon(getIconicDrawable(GoogleMaterial.Icon.gmd_videocam.toString(), android.R.color.white, 22));
+        item_video.setIcon(getIconicDrawable(GoogleMaterial.Icon.gmd_videocam.toString(), R.color.fnMessengerAccentColor, 22));
         item_video.setVisible(false);
         MenuItem item = menu.findItem(R.id.action_friends);
         MenuItemCompat.setActionView(item, R.layout.notification_layout);
         View view = MenuItemCompat.getActionView(item);
         TextView noti = (TextView) view.findViewById(R.id.txt_noti_count);
         IconicsImageView icon = (IconicsImageView) view.findViewById(R.id.icon_noti);
-        icon.setIcon(GoogleMaterial.Icon.gmd_notifications);
+        icon.setIcon(getIconicDrawable(GoogleMaterial.Icon.gmd_notifications.toString(), R.color.fnMessengerAccentColor, 22));
         noti.setText(String.valueOf(notSeenCount));
         if(notSeenCount > 0){
             noti.setVisibility(View.VISIBLE);

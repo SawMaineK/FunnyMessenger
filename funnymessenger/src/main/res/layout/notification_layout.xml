@@ -10,8 +10,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        app:iiv_color="@android:color/white"
-        app:iiv_icon="gmd_shopping_cart"
+        app:iiv_color="@color/fnMessengerAccentColor"
+        app:iiv_icon="gmd_notifications"
         app:iiv_size="18dp" />
 
     <TextView

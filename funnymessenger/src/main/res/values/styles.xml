@@ -8,4 +8,13 @@
 
     </style>
 
+    <style name="Widget.MyApp.ActionBar" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@android:color/white</item>
+        <item name="theme">@style/ThemeOverlay.MyApp.ActionBar</item>
+    </style>
+
+    <style name="ThemeOverlay.MyApp.ActionBar" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:textColorPrimary">@color/fnMessengerAccentColor</item>
+    </style>
+
 </resources>
