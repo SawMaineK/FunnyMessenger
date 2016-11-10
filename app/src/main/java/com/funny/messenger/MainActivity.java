@@ -5,8 +5,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.smk.funnymessager.FnMessagerConfigs;
-import com.smk.funnymessager.models.User;
+import com.smk.funnymessenger.FnMessengerConfigs;
+import com.smk.funnymessenger.models.User;
 
 import java.util.List;
 
@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final FnMessagerConfigs fnMessagerConfigs = FnMessagerConfigs.getInstance();
+        final FnMessengerConfigs fnMessagerConfigs = FnMessengerConfigs.getInstance();
         fnMessagerConfigs.setName("Saw Maine K");
         fnMessagerConfigs.setEmail("sawmainek90@gmail.com");
         fnMessagerConfigs.setImage("test.png");
@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         fnMessagerConfigs.setDeviceId(DeviceUtil.getInstance(this).getID());
         fnMessagerConfigs.setClientId(123456789);
         fnMessagerConfigs.setPackageName(getPackageName());
-        fnMessagerConfigs.register(this, new FnMessagerConfigs.FnRegisterCallback() {
+        fnMessagerConfigs.register(this, new FnMessengerConfigs.FnRegisterCallback() {
             @Override
             public void onSuccess(User user) {
                 btn_open_chat = (Button) findViewById(R.id.btn_open_chat);
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
                         if(fnMessagerConfigs.isRegister()){
-                            fnMessagerConfigs.getFnUserCallbackListener(new FnMessagerConfigs.FnUserCallback() {
+                            fnMessagerConfigs.getFnUserCallbackListener(new FnMessengerConfigs.FnUserCallback() {
                                 @Override
                                 public void results(List<User> users) {
                                     fnMessagerConfigs.openChat(MainActivity.this, users.get(0).getId());

@@ -14,7 +14,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@color/fnMessagerPrimaryColor" >
+            android:background="@color/fnMessengerPrimaryColor" >
         </android.support.v7.widget.Toolbar>
 
     </android.support.design.widget.AppBarLayout>
@@ -41,7 +41,7 @@
             android:layout_below="@+id/lst_conversation"
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
-            android:background="@color/fnMessagerGrey"/>
+            android:background="@color/fnMessengerGrey"/>
 
         <RelativeLayout
             android:orientation="horizontal"
@@ -66,7 +66,7 @@
                 android:layout_height="24dp"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentBottom="true"
-                app:iiv_color="@color/fnMessagerPrimaryColor"
+                app:iiv_color="@color/fnMessengerPrimaryColor"
                 android:layout_marginBottom="10dp"
                 android:enabled="false"
                 app:iiv_icon="gmd_send"
@@ -94,7 +94,7 @@
                     <com.mikepenz.iconics.view.IconicsImageView
                         android:layout_width="18dp"
                         android:layout_height="18dp"
-                        app:iiv_color="@color/fnMessagerGrey"
+                        app:iiv_color="@color/fnMessengerGrey"
                         app:iiv_icon="gmd_mood"
                         android:layout_weight="1"
                         android:layout_gravity="center_horizontal" />
@@ -105,7 +105,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="3dp"
                         android:visibility="invisible"
-                        android:background="@color/fnMessagerPrimaryColor" />
+                        android:background="@color/fnMessengerPrimaryColor" />
 
                 </LinearLayout>
                 <LinearLayout
@@ -119,7 +119,7 @@
                     <com.mikepenz.iconics.view.IconicsImageView
                         android:layout_width="18dp"
                         android:layout_height="18dp"
-                        app:iiv_color="@color/fnMessagerGrey"
+                        app:iiv_color="@color/fnMessengerGrey"
                         app:iiv_icon="gmd_photo_camera"
                         android:layout_gravity="center_horizontal"
                         android:layout_weight="1" />
@@ -129,7 +129,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="3dp"
                         android:visibility="invisible"
-                        android:background="@color/fnMessagerPrimaryColor" />
+                        android:background="@color/fnMessengerPrimaryColor" />
 
                 </LinearLayout>
                 <LinearLayout
@@ -143,7 +143,7 @@
                     <com.mikepenz.iconics.view.IconicsImageView
                         android:layout_width="18dp"
                         android:layout_height="18dp"
-                        app:iiv_color="@color/fnMessagerGrey"
+                        app:iiv_color="@color/fnMessengerGrey"
                         app:iiv_icon="gmd_insert_photo"
                         android:layout_gravity="center_horizontal"
                         android:layout_weight="1" />
@@ -153,7 +153,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="3dp"
                         android:visibility="invisible"
-                        android:background="@color/fnMessagerPrimaryColor" />
+                        android:background="@color/fnMessengerPrimaryColor" />
 
                 </LinearLayout>
                 <LinearLayout
@@ -167,7 +167,7 @@
                     <com.mikepenz.iconics.view.IconicsImageView
                         android:layout_width="18dp"
                         android:layout_height="18dp"
-                        app:iiv_color="@color/fnMessagerGrey"
+                        app:iiv_color="@color/fnMessengerGrey"
                         app:iiv_icon="gmd_audiotrack"
                         android:layout_gravity="center_horizontal"
                         android:layout_weight="1" />
@@ -178,7 +178,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="3dp"
                         android:visibility="invisible"
-                        android:background="@color/fnMessagerPrimaryColor" />
+                        android:background="@color/fnMessengerPrimaryColor" />
 
                 </LinearLayout>
                 <LinearLayout
@@ -192,7 +192,7 @@
                     <com.mikepenz.iconics.view.IconicsImageView
                         android:layout_width="18dp"
                         android:layout_height="18dp"
-                        app:iiv_color="@color/fnMessagerGrey"
+                        app:iiv_color="@color/fnMessengerGrey"
                         app:iiv_icon="gmd_location_searching"
                         android:layout_gravity="center_horizontal"
                         android:layout_weight="1" />
@@ -203,7 +203,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="3dp"
                         android:visibility="invisible"
-                        android:background="@color/fnMessagerPrimaryColor" />
+                        android:background="@color/fnMessengerPrimaryColor" />
 
                 </LinearLayout>
 

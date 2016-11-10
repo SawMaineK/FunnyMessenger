@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="fnMessagerPrimaryColor">#3F51B5</color>
-    <color name="fnMessagerPrimaryDarkColor">#303F9F</color>
-    <color name="fnMessagerAccentColor">#FF4081</color>
-    <color name="fnMessagerGrey">#808080</color>
+    <color name="fnMessengerPrimaryColor">#3F51B5</color>
+    <color name="fnMessengerPrimaryDarkColor">#303F9F</color>
+    <color name="fnMessengerAccentColor">#FF4081</color>
+    <color name="fnMessengerGrey">#808080</color>
 </resources>
