@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_audio"
+        android:title="Audio Call"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_video"
+        android:title="Video Call"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_friends"
+        android:title="Friends"
+        app:showAsAction="always"
+        android:actionLayout="@layout/notification_layout"/>
+</menu>

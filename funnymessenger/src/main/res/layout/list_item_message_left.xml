@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical">
+
+        <com.mikepenz.iconics.view.IconicsImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:iiv_icon="gmd_account_circle"
+            android:id="@+id/img_user" />
+
+        <TextView
+            android:layout_marginLeft="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/message_bg"
+            android:text="Hello, How are you?"
+            android:textColor="@android:color/black"
+            android:id="@+id/txt_message" />
+    </LinearLayout>
+
+    <com.github.curioustechizen.ago.RelativeTimeTextView
+        android:layout_marginLeft="66dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="12 May 2016"
+        android:textSize="12dp"
+        android:id="@+id/txt_date_status" />
+
+</LinearLayout>

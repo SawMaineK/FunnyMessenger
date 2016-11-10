@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/fnMessagerPrimaryColor" >
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ListView
+        android:layout_above="@+id/layout_send_msg"
+        android:layout_below="@+id/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lst_conversation"
+        android:divider="@android:color/transparent"
+        android:transcriptMode="alwaysScroll"
+        android:stackFromBottom="true"
+        android:dividerHeight="0dp" />
+
+    <LinearLayout
+        android:id="@+id/layout_send_msg"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <View
+            android:layout_below="@+id/lst_conversation"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/fnMessagerGrey"/>
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:paddingTop="10dp"
+            android:layout_alignParentBottom="true">
+
+            <com.rockerhieu.emojicon.EmojiconEditText
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edt_msg"
+                android:hint="Write a message"
+                android:textColor="@android:color/black"
+                android:layout_marginRight="50dp" />
+
+            <com.mikepenz.iconics.view.IconicsImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                app:iiv_color="@color/fnMessagerPrimaryColor"
+                android:layout_marginBottom="10dp"
+                android:enabled="false"
+                app:iiv_icon="gmd_send"
+                android:id="@+id/btn_send" />
+
+            <LinearLayout
+                android:layout_below="@+id/edt_msg"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_alignParentBottom="true"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:layout_marginRight="50dp"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:id="@+id/btn_emojicon"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content">
+
+                    <com.mikepenz.iconics.view.IconicsImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        app:iiv_color="@color/fnMessagerGrey"
+                        app:iiv_icon="gmd_mood"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_horizontal" />
+
+                    <View
+                        android:id="@+id/indicator_emojicon"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:visibility="invisible"
+                        android:background="@color/fnMessagerPrimaryColor" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/btn_choose_image"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content">
+
+                    <com.mikepenz.iconics.view.IconicsImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        app:iiv_color="@color/fnMessagerGrey"
+                        app:iiv_icon="gmd_photo_camera"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1" />
+                    <View
+                        android:id="@+id/indicator_choose_image"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:visibility="invisible"
+                        android:background="@color/fnMessagerPrimaryColor" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/btn_take_image"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content">
+
+                    <com.mikepenz.iconics.view.IconicsImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        app:iiv_color="@color/fnMessagerGrey"
+                        app:iiv_icon="gmd_insert_photo"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1" />
+                    <View
+                        android:id="@+id/indicator_take_image"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:visibility="invisible"
+                        android:background="@color/fnMessagerPrimaryColor" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/btn_audio"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content">
+
+                    <com.mikepenz.iconics.view.IconicsImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        app:iiv_color="@color/fnMessagerGrey"
+                        app:iiv_icon="gmd_audiotrack"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1" />
+
+                    <View
+                        android:id="@+id/indicator_audio"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:visibility="invisible"
+                        android:background="@color/fnMessagerPrimaryColor" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/btn_location"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content">
+
+                    <com.mikepenz.iconics.view.IconicsImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        app:iiv_color="@color/fnMessagerGrey"
+                        app:iiv_icon="gmd_location_searching"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1" />
+
+                    <View
+                        android:id="@+id/indicator_location"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:visibility="invisible"
+                        android:background="@color/fnMessagerPrimaryColor" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/layout_emojicon"
+            android:layout_width="match_parent"
+            android:layout_height="220dp">
+            <fragment
+                android:id="@+id/emojicons"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                class="com.rockerhieu.emojicon.EmojiconsFragment"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

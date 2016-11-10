@@ -1,0 +1,12 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.smk.funnymessager">
+
+    <application android:allowBackup="true" android:label="@string/app_name"
+        android:supportsRtl="true">
+
+        <service android:name=".services.ChatService" />
+        <activity android:theme="@style/FunnyMessengerTheme" android:name=".ConversationActivity" />
+
+    </application>
+
+</manifest>
